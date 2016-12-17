@@ -3,10 +3,29 @@
   box-sizing: border-box;
 }
 
+body {
+  background: $backgroundBiege;
+}
+h1 {
+  font-family: $stack-fjallaOne;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: $stack-fjallaOne;
+  font-size: 1.5em;
+}
+
+a {
+  font-family: $stack-fjallaOne;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+
 // Color Palette Modifiers
 
 $palettes: (
-  grey: (
+  gray: (
     xx-light : lighten($grey, 43%),
     x-light  : lighten($grey, 35%),
     light    : lighten($grey, 12%),

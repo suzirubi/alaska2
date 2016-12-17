@@ -7,54 +7,72 @@
   </head>
   <body>
     <div class="flexContainer">
-<!-- Begin container for hero image -->
+
+<!-- Begin container for hero image and nav bar-->
       <div class="heroPlusNav">
-        <div class="hero">
-          <div class="logo">
-            <img src="img/logo-main.svg" alt="Arctic Wild Logo" /><img src="img/logo-text.svg" alt="Arctic Wild" />
+
+<!-- Begin container for nav bar -->
+        <div class="navBar">
+          <div class="navBarWrap">
+            <div class="logo">
+              <a href="#"><img id="mainLogoNav"src="img/logo-main.svg" alt="Arctic Wild Logo" /><img id="mainLogoTextNav" src="img/logo-text.svg" alt="Arctic Wild" /></a>
+              <div class="logoOrange">
+                <a href="#"><img id="mainLogoNavOrange"src="img/logo-mainOrange.svg" alt="Arctic Wild Logo" /><img id="mainLogoTextNavOrange" src="img/logo-textOrange.svg" alt="Arctic Wild" /></a>
+              </div>
+            </div>
+<!-- Begin container for Navigation Bar -->
+            <div class="nav">
+              <ul>
+                <li><a href="#" class="schedule">schedule</a></li>
+                <li><a href="#" class="destination">destinations</a><img class="arrow" src="img/btn-navarrow.png" alt="down arrow for sub menu" /></li>
+                  <div class="navSub destinationSub">
+                    <ul>
+                      <li><a href="#">Western Brooks Range</a></li>
+                      <li><a href="#">Gates of the Arctic</a></li>
+                      <li><a href="#">Arctic National Wildlife Refuge</a></li>
+                      <li><a href="#">Yukon River</a></li>
+                      <li><a href="#">Wrangell-St. Elias Nartional Park</a></li>
+                      <li><a href="#">Katmai National Park</a></li>
+                    </ul>
+                  </div>
+                <li><a href="#" class="activities">activities</a><img class="arrow" src="img/btn-navarrow.png" alt="down arrow for sub menu" /></li>
+                  <div class="navSub activitiesSub">
+                    <ul>
+                      <li><a href="#">Backpacking</a></li>
+                      <li><a href="#">Base Camp</a></li>
+                      <li><a href="#">Canoe</a></li>
+                      <li><a href="#">Rafting</a></li>
+                      <li><a href="#">Photography</a></li>
+                      <li><a href="#">Custom</a></li>
+                    </ul>
+                  </div>
+                <li><a href="#" class="planning">planning</a><img class="arrow" src="img/btn-navarrow.png" alt="down arrow for sub menu" /></li>
+                <div class="navSub planningSub">
+                    <ul id="" class="navSub">
+                      <li><a href="#">Trip Details</a></li>
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Lodging & Transport</a></li>
+                      <li><a href="#">Euipment Lists</a></li>
+                      <li><a href="#">Reservation Forms</a></li>
+                      <li><a href="#">Bookstore</a></li>
+                    </ul>
+                </div>
+                <li><a href="#" class="about">about </a><img class="arrow" src="img/btn-navarrow.png" alt="down arrow for sub menu" /></li>
+                <div class="navSub aboutSub">
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Our Guides</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                  </ul>
+                <li><a href="#" class="contact">contact</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="nav">
-            <ul>
-              <li><a href="#" class="schedule">schedule</a></li>
-              <li><a href="#" class="destination">destinations <img src="img/btn-navarrow.png" alt="down arrow for sub menu" /></a></li>
-                <ul id="destinationSub" class="navSub">
-                  <li><a href="#">Western Brooks Range</a></li>
-                  <li><a href="#">Gates of the Arctic</a></li>
-                  <li><a href="#">Arctic National Wildlife Refuge</a></li>
-                  <li><a href="#">Yukon River</a></li>
-                  <li><a href="#">Wrangell-St. Elias Nartional Park</a></li>
-                  <li><a href="#">Katmai National Park</a></li>
-                </ul>
-              <li><a href="#" class="activities">activities <img src="img/btn-navarrow.png" alt="down arrow for sub menu" /></a></li>
-                <ul id="activitiesSub" class="navSub">
-                  <li><a href="#">Backpacking</a></li>
-                  <li><a href="#">Base Camp</a></li>
-                  <li><a href="#">Canoe</a></li>
-                  <li><a href="#">Rafting</a></li>
-                  <li><a href="#">Photography</a></li>
-                  <li><a href="#">Custom</a></li>
-                </ul>
-              <li><a href="#" class="planning">planning <img src="img/btn-navarrow.png" alt="down arrow for sub menu" /></a></li>
-                <ul id="planningSub" class="navSub">
-                  <li><a href="#">Trip Details</a></li>
-                  <li><a href="#">FAQs</a></li>
-                  <li><a href="#">Lodging & Transport</a></li>
-                  <li><a href="#">Euipment Lists</a></li>
-                  <li><a href="#">Reservation Forms</a></li>
-                  <li><a href="#">Bookstore</a></li>
-                </ul>
-              <li><a href="#" class="about">about <img src="img/btn-navarrow.png" alt="down arrow for sub menu" /></a></li>
-                <ul id="aboutSub" class="navSub">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Our Guides</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                </ul>
-              <li><a href="#" class="contact">contact</a></li>
-            </ul>
-          </div>
+<!-- End nav bar content -->
         </div>
-<!-- End nav bar -->
+<!-- End nav bar container  -->
+
 <!-- Begin content for hero image -->
         <div class="hero-Content">
           <img id="hero-alaskaState"src="img/icon-alaska.png" alt="alaska state outline" />
