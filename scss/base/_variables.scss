@@ -22,9 +22,21 @@ $base__line      : 24px;
 $font-url--google         : "https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,300i,400,400i,600,600i,700,700i,800";
 
 
-$stack-openSans           : 'Open Sans', sans-serif;
+$helvetica-font-stack     : "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$stack-openSans           : 'Open Sans', $helvetica-font-stack;
 $stack-fjallaOne          : 'Fjalla One', sans-serif;
 
+
+$font-family--primary     : $stack-openSans;
+
+// Font weights
+
+$font-weight--light       : 300;
+$font-weight--regular     : 400;
+$font-weight--semiBold    : 600;
+$font-weight--bold        : 700;
+$font-weight--extraBold   : 800;
 
 // Asset paths
 

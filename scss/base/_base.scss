@@ -4,23 +4,22 @@
 }
 
 body {
-  background: $backgroundBiege;
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+  font-family: $font-family--primary;
 }
 h1 {
   font-family: $stack-fjallaOne;
   font-size: 3em;
+  text-transform: uppercase;
 }
 
 h2 {
   font-family: $stack-fjallaOne;
   font-size: 1.5em;
+  text-transform: uppercase;
 }
 
-a {
-  font-family: $stack-fjallaOne;
-  text-transform: uppercase;
-  letter-spacing: .03em;
-}
 
 // Color Palette Modifiers
 
