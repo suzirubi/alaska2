@@ -1,30 +1,114 @@
 
 .flexContainer {
   width: 100vw;
+  margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+// Begin hero and nav container
 .heroPlusNav {
+  @media screen and (max-width: 960px) {
+    width: 100%;
+    height: 500px;
+  }
   width: 100vw;
   height: 100vh;
   margin: 0;
+  background-color: $black;
   background-image: url("../img/hero-slide1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  align-self: flex-start;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .navBar {
+  @media screen and (max-width: 960px) {
+  width: 100vw;
+  top: 1em;
+  }
+  align-self: center;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   position: absolute;
   top: 4.5em;
 }
 .navBarWrap {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
+  align-self: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
+}
+.logo {
+  @media screen and (max-width: 960px) {
+    width: 30%;
+  }
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: .4em;
+}
+.nav {
+  @media screen and (min-width: 960px) {
+  display: flex;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  }
+  display: none;
+}
+.hero-Content {
+  @media screen and (max-width: 960px) {
+    height: 40vh;
+    position: relative;
+    top: 5em;
+  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#heroTextLogo {
+  @media screen and (max-width: 960px) {
+    width: em(360px);
+    height: em(100px);
+  }
+  width: em(800px);
+}
+// End hero and nav container
+.gallery {
+  @media screen and (max-width: 960px) {
+    width: 100vw;
+  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+.images {
+  width: 100%;
+  padding: 0em;
+  margin: 1em;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.images img {
+  width: 50%;
+  height: 50%;
 }

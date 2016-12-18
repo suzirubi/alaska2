@@ -7,20 +7,28 @@ body {
   font-size: $base__font-size;
   line-height: ($base__line/$base__font-size);
   font-family: $font-family--primary;
-  // -webkit-font-smoothing: antialiased;
+  background-color: $backgroundBiege;
+}
+h1,
+h2,
+h3 {
+  font-family: $stack-fjallaOne;
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 h1 {
-  font-family: $stack-fjallaOne;
   font-size: 3em;
-  text-transform: uppercase;
 }
-
 h2 {
-  font-family: $stack-fjallaOne;
-  font-size: 1.5em;
-  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: .3em;
+  -webkit-font-smoothing: antialiased;
 }
-
+h3 {
+  font-size: .9em;
+  letter-spacing: .15em;
+  -webkit-font-smoothing: antialiased;
+}
 
 // Color Palette Modifiers
 
