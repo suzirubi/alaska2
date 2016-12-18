@@ -7,6 +7,7 @@ body {
   font-size: $base__font-size;
   line-height: ($base__line/$base__font-size);
   font-family: $font-family--primary;
+  // -webkit-font-smoothing: antialiased;
 }
 h1 {
   font-family: $stack-fjallaOne;

@@ -2,120 +2,29 @@
 .flexContainer {
   width: 100vw;
   display: flex;
+  flex-direction: column;
 }
 .heroPlusNav {
   width: 100vw;
   height: 100vh;
+  margin: 0;
   background-image: url("../img/hero-slide1.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
 }
 .navBar {
-  width: 960px;
-  background-color: palette(black,dark);
   display: flex;
   position: absolute;
-  top:3em;
+  top: 4.5em;
 }
 .navBarWrap {
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-}
-.logo {
-  width: 300px;
-  display: flex;
-  justify-content: flex-start;
-  path {
-    fill: $white;
-  }
-  a:hover {
-    path {
-      fill: $arcticOrange;
-    }
-  }
-}
-
-#logoMainWhite {
-  width: 50px;
-  height: 50px;
-}
-#logoTextWhite {
-  width: 180px;
-  height: 50px;
-}
-
-
-.nav {
-  width: 890px;
-  display: flex;
-  justify-content: flex-end;
-  color: white;
-  & ul {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    & li {
-      display: flex;
-      justify-content: flex-start;
-      align-items:baseline;
-      border-radius: 0px;
-      margin-left: 2em;
-      & a {
-        color: $white;
-        text-decoration: none;
-        align-self: center;
-      }
-    }
-  }
-}
-
-
-.navSub > ul {
-  @include clearfix;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: absolute;
-  top:0;
-  left:0;
-  z-index: 1000;
-  & li {
-    width: 100%;
-    display: inline-block;
-  }
-}
-.destinationSub,
-.aboutSub,
-.planningSub,
-.activitiesSub {
-  display: none;
-}
-
-.destinationSub {
-  top: 20em;
-  left: 10em;
-}
-
-.hero-Content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 10em;
-  z-index: 10;
-}
-.hero-Content h2 {
-  font-size: 1.5em;
-  color: $white;
-}
-#heroTextLogo img {
-  width: 500px;
+  margin: 0;
 }
