@@ -234,25 +234,23 @@ h3 {
       height: 500px; } }
 
 .navBar {
+  width: 100vw;
+  top: 2em;
   align-self: center;
-  position: absolute;
-  display: flex; }
-  @media screen and (max-width: 1140px) {
+  display: flex;
+  flex-direction: column;
+  position: absolute; }
+  @media screen and (min-width: 960px) {
     .navBar {
-      width: 100vw;
-      top: 2em;
-      flex-direction: column; } }
+      flex-direction: row;
+      justify-content: space-between; } }
   @media screen and (min-width: 1140px) {
     .navBar {
       width: 1140px;
-      width: 100vw;
-      top: 4.5em;
-      flex-direction: row;
-      justify-content: space-between; } }
+      top: 4.5em; } }
 
 .navBarWrap {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
   align-self: flex-start;
   display: flex;
   flex-direction: column;
@@ -264,32 +262,6 @@ h3 {
       justify-content: space-between;
       align-items: center; } }
 
-.navBar .navBarWrap .nav ul {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0; }
-  .navBar .navBarWrap .nav ul li {
-    width: 100%;
-    display: flex;
-    flex-direction: column; }
-    .navBar .navBarWrap .nav ul li ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      margin: 0; }
-      .navBar .navBarWrap .nav ul li ul li {
-        display: flex;
-        flex-direction: column; }
-
-.navBar .navBarWrap .nav img {
-  display: none; }
-  @media screen and (min-width: 960px) {
-    .navBar .navBarWrap .nav img {
-      display: inline; } }
-
 .logo {
   width: 40%;
   align-self: flex-start;
@@ -298,6 +270,87 @@ h3 {
   @media screen and (max-width: 960px) {
     .logo {
       width: 60%; } }
+
+.nav {
+  position: absolute;
+  top: -2em;
+  right: 0;
+  background-color: #343433;
+  padding-top: 4.5em;
+  width: 40%;
+  height: 100vh; }
+  @media screen and (min-width: 960px) {
+    .nav {
+      background-color: transparent;
+      position: relative;
+      top: 1.5em;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 0;
+      width: 100%; } }
+
+.navBar .navBarWrap .nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0; }
+  @media screen and (min-width: 960px) {
+    .navBar .navBarWrap .nav ul {
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row; }
+      .navBar .navBarWrap .nav ul li {
+        width: 16.666666666%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative; }
+        .navBar .navBarWrap .nav ul li img {
+          display: none;
+          width: 30px; } }
+      @media screen and (min-width: 960px) and (min-width: 960px) {
+        .navBar .navBarWrap .nav ul li img {
+          align-self: flex-start;
+          display: inline; } }
+
+  .navBar .navBarWrap .nav ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+
+.navSub ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0; }
+  @media screen and (min-width: 960px) {
+    .navSub ul {
+      width: 100%;
+      list-style: none;
+      position: absolute;
+      top: 1em;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 0; }
+      .navSub ul li {
+        width: 100%;
+        display: flex;
+        flex-direction: column; } }
+  .navSub ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
 
 .navBarWrap .menuBar {
   width: 1.875em;
