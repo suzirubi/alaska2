@@ -317,7 +317,6 @@ h3 {
           width: 30px; } }
       @media screen and (min-width: 960px) and (min-width: 960px) {
         .navBar .navBarWrap .nav ul li img {
-          align-self: flex-start;
           display: inline; } }
 
   .navBar .navBarWrap .nav ul li {
@@ -352,7 +351,34 @@ h3 {
     display: flex;
     flex-direction: column; }
 
+.destination:after {
+  content: url("../img/btn-navarrow.png"); }
+  @media screen and (max-width: 960px) {
+    .destination:after {
+      display: none; } }
+
+.activities:after {
+  content: url("../img/btn-navarrow.png"); }
+  @media screen and (max-width: 960px) {
+    .activities:after {
+      display: none; } }
+
+.planning:after {
+  content: url("../img/btn-navarrow.png"); }
+  @media screen and (max-width: 960px) {
+    .planning:after {
+      display: none; } }
+
+.about:after {
+  content: url("../img/btn-navarrow.png"); }
+  @media screen and (max-width: 960px) {
+    .about:after {
+      display: none; } }
+
 .navBarWrap .menuBar {
+  position: absolute;
+  right: 1em;
+  top: .5em;
   width: 1.875em;
   height: 1.625em; }
 
