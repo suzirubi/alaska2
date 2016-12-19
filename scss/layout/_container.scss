@@ -1,92 +1,207 @@
 
 .flexContainer {
   width: 100vw;
-  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 // Begin hero and nav container
 .heroPlusNav {
   @media screen and (max-width: 960px) {
-    width: 100%;
     height: 500px;
   }
   width: 100vw;
   height: 100vh;
-  margin: 0;
   background-color: $black;
-  background-image: url("../img/hero-slide1.jpg");
+  background: no-repeat center url("../img/hero-slide1.jpg");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   align-self: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .navBar {
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1140px) {
   width: 100vw;
-  top: 1em;
+  top: 2em;
+  flex-direction: column;
   }
-  align-self: center;
-  display: flex;
+  @media screen and (min-width: 1140px) {
+  width: 1140px;
+  width: 100vw;
+  top: 4.5em;
   flex-direction: row;
   justify-content: space-between;
+  }
+  align-self: center;
   position: absolute;
-  top: 4.5em;
+  display: flex;
 }
 .navBarWrap {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
-  align-self: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-}
-.logo {
-  @media screen and (max-width: 960px) {
-    width: 30%;
+  @media screen and (min-width: 960px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
   align-self: flex-start;
   display: flex;
-  justify-content: flex-start;
-  margin-top: .4em;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0em 1.5em;
 }
-.nav {
+.navBar .navBarWrap .nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      li {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+.navBar .navBarWrap .nav img {
   @media screen and (min-width: 960px) {
-  display: flex;
-  width: 70%;
-  display: flex;
-  justify-content: flex-end;
+    display: inline;
   }
   display: none;
 }
-.hero-Content {
+
+.logo {
   @media screen and (max-width: 960px) {
-    height: 40vh;
-    position: relative;
-    top: 5em;
+    width: 60%;
   }
+  width: 40%;
+  align-self: flex-start;
+  display: inline;
+  margin-top: .4em;
+}
+
+.navBarWrap .menuBar {
+  width: em(30px);
+  height: em(26px);
+}
+.navBarWrap .menuBar span {
+  @media screen and (max-width: 960px){
+    display: block;
+    height: em(2px);
+    background: $white;
+    margin: em(5px) 0;
+  }
+  display: none;
+}
+
+// End nav bar
+
+// Begin Hero Content
+.hero-Content {
+  position: relative;
+  top: 25%;
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: .5em;
+  }
+  img {
+    width: em(80px);
+  }
+}
+.hero-Content .logoWhite {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 1.25em;
+  }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2.25em;
+}
+.logoWhite #heroTextLogo {
+  @media screen and (min-width: 767px) {
+    width: em(171.3px * 3.1);
+    height: em(18.2px * 3.1);
+  }
+  @media screen and (min-width: 960px) {
+    width: em(171.3px * 4.55);
+    height: em(18.2px * 4.55);
+  }
+  width: em(171.3px * 2);
+  height: em(18.2px * 2);
+}
+.hero-whiteBar {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: em(6px);
+  margin-top: .5em;
+  margin-bottom: 1.25em;
+  span {
+    display: block;
+    width: em(250px);
+    height: em(6px);
+    background-color: $white;
+  }
+}
+.hero-Arrow {
+  width: 6.5em;
+  height: 6.5em;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 50%;
+  position: relative;
+  img {
+    width: 2em;
+    position: absolute;
+    top: 2em;
+    left: 2.55em;
+  }
+}
+.Explore {
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
+  align-self: flex-end;
+  position: relative;
+  margin:auto;
+  width: 10em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-#heroTextLogo {
-  @media screen and (max-width: 960px) {
-    width: em(360px);
-    height: em(100px);
+  margin-bottom: 4em;
+  h3 {
+    width: 100%;
+    text-align: center;
+    background-color: $arcticOrange;
+    padding: 1.25em;
   }
-  width: em(800px);
+  img {
+    margin-top: -1.25em;
+    width: em(50px);
+    height: em(9px);
+  }
 }
+
+
 // End hero and nav container
 .gallery {
   @media screen and (max-width: 960px) {

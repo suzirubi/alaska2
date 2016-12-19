@@ -216,90 +216,188 @@ h3 {
 
 .flexContainer {
   width: 100vw;
-  margin: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column; }
 
 .heroPlusNav {
   width: 100vw;
   height: 100vh;
-  margin: 0;
   background-color: #0b0b0b;
-  background-image: url("../img/hero-slide1.jpg");
+  background: no-repeat center url("../img/hero-slide1.jpg");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   align-self: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; }
+  justify-content: space-between; }
   @media screen and (max-width: 960px) {
     .heroPlusNav {
-      width: 100%;
       height: 500px; } }
 
 .navBar {
   align-self: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   position: absolute;
-  top: 4.5em; }
-  @media screen and (max-width: 960px) {
+  display: flex; }
+  @media screen and (max-width: 1140px) {
     .navBar {
       width: 100vw;
-      top: 1em; } }
+      top: 2em;
+      flex-direction: column; } }
+  @media screen and (min-width: 1140px) {
+    .navBar {
+      width: 1140px;
+      width: 100vw;
+      top: 4.5em;
+      flex-direction: row;
+      justify-content: space-between; } }
 
 .navBarWrap {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
-  align-self: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0; }
-
-.logo {
-  width: 100%;
   align-self: flex-start;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0em 1.5em; }
+  @media screen and (min-width: 960px) {
+    .navBarWrap {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; } }
+
+.navBar .navBarWrap .nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0; }
+  .navBar .navBarWrap .nav ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .navBar .navBarWrap .nav ul li ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      margin: 0; }
+      .navBar .navBarWrap .nav ul li ul li {
+        display: flex;
+        flex-direction: column; }
+
+.navBar .navBarWrap .nav img {
+  display: none; }
+  @media screen and (min-width: 960px) {
+    .navBar .navBarWrap .nav img {
+      display: inline; } }
+
+.logo {
+  width: 40%;
+  align-self: flex-start;
+  display: inline;
   margin-top: .4em; }
   @media screen and (max-width: 960px) {
     .logo {
-      width: 30%; } }
+      width: 60%; } }
 
-.nav {
+.navBarWrap .menuBar {
+  width: 1.875em;
+  height: 1.625em; }
+
+.navBarWrap .menuBar span {
   display: none; }
-  @media screen and (min-width: 960px) {
-    .nav {
-      display: flex;
-      width: 70%;
-      display: flex;
-      justify-content: flex-end; } }
+  @media screen and (max-width: 960px) {
+    .navBarWrap .menuBar span {
+      display: block;
+      height: 0.125em;
+      background: #fff;
+      margin: 0.3125em 0; } }
 
 .hero-Content {
+  position: relative;
+  top: 25%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center; }
-  @media screen and (max-width: 960px) {
-    .hero-Content {
-      height: 40vh;
-      position: relative;
-      top: 5em; } }
+  .hero-Content h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: .5em; }
+  .hero-Content img {
+    width: 5em; }
 
-#heroTextLogo {
-  width: 50em; }
+.hero-Content .logoWhite {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2.25em; }
+  @media screen and (max-width: 767px) {
+    .hero-Content .logoWhite {
+      margin-bottom: 1.25em; } }
+
+.logoWhite #heroTextLogo {
+  width: 21.4125em;
+  height: 2.275em; }
+  @media screen and (min-width: 767px) {
+    .logoWhite #heroTextLogo {
+      width: 33.18938em;
+      height: 3.52625em; } }
+  @media screen and (min-width: 960px) {
+    .logoWhite #heroTextLogo {
+      width: 48.71344em;
+      height: 5.17562em; } }
+
+.hero-whiteBar {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 0.375em;
+  margin-top: .5em;
+  margin-bottom: 1.25em; }
+  .hero-whiteBar span {
+    display: block;
+    width: 15.625em;
+    height: 0.375em;
+    background-color: #fff; }
+
+.hero-Arrow {
+  width: 6.5em;
+  height: 6.5em;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  position: relative; }
+  .hero-Arrow img {
+    width: 2em;
+    position: absolute;
+    top: 2em;
+    left: 2.55em; }
+
+.Explore {
+  align-self: flex-end;
+  position: relative;
+  margin: auto;
+  width: 10em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4em; }
   @media screen and (max-width: 960px) {
-    #heroTextLogo {
-      width: 22.5em;
-      height: 6.25em; } }
+    .Explore {
+      display: none; } }
+  .Explore h3 {
+    width: 100%;
+    text-align: center;
+    background-color: #dc7725;
+    padding: 1.25em; }
+  .Explore img {
+    margin-top: -1.25em;
+    width: 3.125em;
+    height: 0.5625em; }
 
 .gallery {
   display: flex;
@@ -334,80 +432,68 @@ h3 {
   stroke: #dc7725;
   stroke-width: 0.03125em; }
 
-#logoMainWhite {
-  width: 50px;
-  height: 50px; }
+.logo .logoWhite #logoMainWhite {
+  width: 3.125em;
+  height: 3.125em;
+  margin-right: .25em; }
+  @media screen and (max-width: 960px) {
+    .logo .logoWhite #logoMainWhite {
+      width: 2.40385em;
+      height: 2.40385em; } }
 
 #logoTextWhite {
-  width: 180px;
-  height: 50px; }
+  width: 11.25em;
+  height: 3.125em; }
+  @media screen and (max-width: 960px) {
+    #logoTextWhite {
+      width: 8.65385em;
+      height: 2.40385em; } }
 
-.nav {
-  color: white; }
-  .nav ul {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    margin: 0; }
-    .nav ul li {
-      display: flex;
-      justify-content: flex-start;
-      align-items: baseline;
-      border-radius: 0px;
-      margin-left: 2em; }
-      .nav ul li a {
-        font-size: 0.875em;
-        line-height: 0.875em;
-        font-family: "Fjalla One", sans-serif;
-        letter-spacing: .09em;
-        text-transform: uppercase;
-        color: #fff;
-        text-decoration: none;
-        align-self: center; }
-        @media screen and (min-width: 1150px) {
-          .nav ul li a {
-            font-size: 1em;
-            line-height: 1em; } }
-        .nav ul li a:hover {
-          color: #dc7725; }
+.nav ul {
+  color: #fff; }
+  .nav ul li {
+    border-radius: 0px; }
+    .nav ul li a {
+      font-size: 0.875em;
+      line-height: 0.875em;
+      font-family: "Fjalla One", sans-serif;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none; }
+      @media screen and (min-width: 1150px) {
+        .nav ul li a {
+          font-size: 1em;
+          line-height: 1em; } }
+      .nav ul li a:hover {
+        color: #dc7725; }
 
-.navSub > ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1000; }
-  .navSub > ul::after {
-    clear: both;
-    content: "";
-    display: block; }
-  .navSub > ul li {
-    width: 100%;
-    display: inline-block; }
-
-.destinationSub,
-.aboutSub,
-.planningSub,
-.activitiesSub {
-  display: none; }
-
-.destinationSub {
-  top: 20em;
-  left: 10em; }
+.navSub ul li a {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: capitalize; }
 
 .hero-Content h2, h3 {
   color: #fff;
   text-transform: uppercase; }
 
-.hero-Explore h3 {
-  background-color: #dc7725;
-  padding: 1.5em 2.5em; }
+.hero-Content h2 {
+  font-size: .8em; }
+  @media screen and (min-width: 767px) {
+    .hero-Content h2 {
+      font-size: 1.25em;
+      letter-spacing: .15em; } }
+  @media screen and (min-width: 960px) {
+    .hero-Content h2 {
+      letter-spacing: .25em; } }
 
-#heroTextLogo path {
+.hero-Content .hero-whiteBar {
+  width: 100%;
+  height: 0.75em; }
+
+.hero-whiteBar span {
+  background-color: #fff; }
+
+.hero-Content .logoWhite #heroTextLogo path {
   fill: #fff;
   stroke: #fff;
   stroke-width: 0.01875em; }
