@@ -33,35 +33,43 @@
 // End logo
 
 // Begin nav items
-.nav ul {
-  color: $white;
-  li {
-    border-radius: 0px;
-    a {
-      @media screen and (min-width: 1150px) {
-        font-size: em(16px);
-        line-height: em(16px);
-      }
-      font-size: em(14px);
-      line-height: em(14px);
-      font-family: $stack-fjallaOne;
-      letter-spacing: .09em;
-      text-transform: uppercase;
-      color: $white;
-      text-decoration: none;
-      &:hover {
-        color: $arcticOrange;
-      }
+.navBar ul li a {
+  @media screen and (min-width: 1150px) {
+    font-size: em(16px);
+    line-height: em(16px);
+  }
+  @media screen and (min-width: 960px) {
+    color: $white;
+    font-size: em(14px);
+    line-height: em(14px);
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      color: $arcticOrange;
     }
   }
+  font-family: $stack-fjallaOne;
+  font-size: 1.3em;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
 }
-.navSub ul li a {
+div.navSub li a {
+  @media screen and (min-width: 960px) {
+    font-size: .9em;
+  }
+  color: $white;
   font-family: $stack-openSans;
+  font-size: .8em;
+  line-height: 1.5em;
   text-transform: capitalize;
+  &:hover {
+    color: $arcticOrange;
+  }
 }
 .hero-Content h2, h3 {
   color: $white;
-  text-transform: uppercase;
 }
 .hero-Content h2 {
   @media screen and (min-width: 767px) {
@@ -80,7 +88,6 @@
 .hero-whiteBar span {
   background-color: $white;
 }
-
 .hero-Content .logoWhite #heroTextLogo path {
     fill: $white;
     stroke: $white;
